@@ -3,6 +3,8 @@ import adivinhacao
 
 def escolhe_jogo():
     print("****************************************")
+    print("** Bem vindo aos jogos em python! **")
+    print("****************************************")
     print("** Escolha seu jogo! **")
     print("****************************************")
 
@@ -19,6 +21,7 @@ def escolhe_jogo():
         adivinhacao.jogar()
     else:
         print("jogo nao encontrado")
+        return escolhe_jogo()
 
 if(__name__ == "__main__"):
     escolhe_jogo()

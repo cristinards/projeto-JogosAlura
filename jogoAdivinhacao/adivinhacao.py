@@ -1,5 +1,8 @@
 import random
 
+import jogos
+
+
 def jogar():
     print("****************************************")
     print("** Bem vindo ao jogo de Adivinhação! **")
@@ -59,6 +62,10 @@ def jogar():
     print("Você fez o total de {} pontos".format(pontos))
     print("O número secreto era:", numero_secreto)
     print("****************************************")
+
+    print("\n")
+    return jogos.escolhe_jogo()
+
 
 if(__name__ == "__main__"):
     jogar()
